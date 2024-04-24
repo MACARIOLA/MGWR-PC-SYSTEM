@@ -27,44 +27,101 @@
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 
+
+
 <body class="contactBg">
     <!---------------
           NAVBAR
     ---------------->
     <header class="header">
-        <a href="" class="logo">MGWR PC</a>
+        <a href="home.html" class="logo">MGWR PC</a>
 
         <input type="checkbox" id="check">
         <label for="check" class="icons">
-            <i class="bx bx-menu" id="menu-icon"></i>
-            <i class='bx bx-x' id="close-icon"></i>
+            <img src="Images/Menu.png" alt="" id="menu-icon">
+            <img src="Images/MenuX.png" alt="" id="close-icon">
         </label>
 
         <nav class="navbar">
             <a href="home.html" style="--i:0">Home</a>
-            <a href="#" style="--i:1">About Us</a>
-            <a href="#" style="--i:2">Services</a>
+            <a class="active" href="aboutus.html" style="--i:1">About Us</a>
+            <a href="pricelist.html" style="--i:2">Pricelist</a>
             <a href="feedback.html" style="--i:3">Feedbacks</a>
-            <a href="#" style="--i:4">FAQs</a>
+            <a href="faqs.html" style="--i:4">FAQs</a>
         </nav>
     </header>    
 
+
+
+    <!---------------
+         ABOUT US
+    ---------------->
     <section class="about">
         <div class="main">
-            <img src="Images/SulitPc1.jpg" alt="">
+            <div class="image-container">
+                <img src="Images/SulitPc1.jpg" alt="">
+            </div>
             <div class="all-text">
                 <h4>WHO ARE WE</h4>
                 <h1>MGWR PC</h1>
-                <p>Introducing MGWRPC – your one-stop destination for the latest in computers, laptops, and printers! With MGWRPC, you have access to a diverse range of top-quality tech products, perfect for showcasing your brand and enticing your customers. Whether you're looking to upgrade your office setup or launch an exciting promotion, MGWRPC has got you covered.</p>
-                <p>Browse through our extensive selection of cutting-edge devices, carefully curated to meet your business needs. From sleek laptops to powerful printers, MGWRPC offers unmatched versatility and reliability. And with our user-friendly interface, finding the perfect tech for your promotional campaign is easier than ever.</p>
-                <p>Unlock the potential of your promotions with MGWRPC. Sign up today and revolutionize the way you engage with your customers!</p>
+                <p>As a dynamic and innovative organization, we focus on providing the best computer and building a long-term relationship with our valued clients.</p>
+                <p>At MGWR PC, we are dedicated with passion to excellence and commitment in delivering premium solutions to meet your specific needs. Our dedicated team works diligently to ensure your satisfaction and success.</p>
                 <div class="btn">
-                    <button type="button">Our Team</button>
-                    <button type="button" class="btn2">Our Services</button>
+                    <a href="#">
+                        <button type="button">Our Team</button>
+                    </a>
+                    <a href="services.html">
+                        <button type="button" class="btn2">Our Services</button>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
+
+
+
+    <!---------------
+        M, V, CV
+    ---------------->
+    <section class="mvcv-container">
+        <div class="mvcv-block">
+            <div class="box">
+                <div class="icon">01</div>
+                <div class="content">
+                    <h3>Mission</h3>
+                    <p>Our mission is to provide outstanding value to our customers, employees, and business partners through our ability to deliver superior results using industry best practices.</p>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="icon">02</div>
+                <div class="content">
+                    <h3>Vission</h3>
+                    <p>Become indispensable to our customers by offering computer products and services that assist them in achieving their goals.</p>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="icon">03</div>
+                <div class="content">
+                    <h3>Core Values</h3>
+                    <p>Collaborative, Respect, Integrity, Pride.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!---------------
+       CONTACT US
+    ---------------->
+    <div class="contactus">
+        <p>You Can Always Reach Us Here</p>
+        <a class="btn-fdbck" id="leaveFeedbackBtn" href="contact.html">Contact Us</a>
+    </div>
+
+
 
     <!---------------
          FOOTER
@@ -78,7 +135,8 @@
         <div class="footer-content">
             <h4>Company</h4>
             <ul>
-                <li><a href="#">About Us</a></li>                
+                <li><a href="aboutus.html">About Us</a></li>       
+                <li><a href="services.html">Our Services</a></li>         
                 <li><a href="#">Meet Our Team</a></li>
                 <li><a href="#">Store Location</a></li>
             </ul>
@@ -90,22 +148,20 @@
                 <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="#">Privacy Policy</a></li>                
                 <li><a href="#">Terms of Service</a></li>
-                <li><a href="#">FAQs</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
             </ul>
         </div>
 
         <div class="footer-content">
             <h4>Connect With Us</h4>
             <div class="icons2">
-                <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-                <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
-                <a href="#"><i class='bx bxl-tiktok' ></i></a>
-                <a href="#"><i class='bx bxl-gmail'></i></a>
+                <a href="https://www.facebook.com/mgwrpc"><img src="Images/fbicon.png" alt=""></a>
+                <a href="#"><img src="Images/igicon.png" alt=""></a>
+                <a href="#"><img src="Images/tticon.png" alt=""></a>
+                <a href="#"><img src="Images/gmicon.png" alt=""></i></a>
             </div>
         </div>
     </footer>
-
-
 
     <!---------------
        COPYRIGHTS
