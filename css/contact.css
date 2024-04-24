@@ -1,21 +1,31 @@
+/* -------------
+      IMPORT
+-------------- */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700&display=swap');
 
+/* -------------
+    SHORTCUTS
+-------------- */
 :root {
-    --bodyBg:#303841;
-    --formBg:#343F4B;
-    --primaryColor:#0076A3;
-    --paraColor:#5e6c79;
-    --paraColor:#74828f;
-
     --mgwrpcMain1: #8C52FF; 
     --mgwrpcMain2: #FF914D;
+    --black1: #000;
+    --black2: #151515;
+    --black3: #303030;
+    --gray1: #222;
+    --gray2: #333;
+    --gray3: #444;
+    --white1: #ffffff;
+    --white2: #F2EFEB;
+    --white3: #dddddd;
+    --paracolor: #5e6c79;
 }
 
-.contactBg {
-    font-family: 'Roboto Serif', serif;
-    background: #000000;
-}
 
+
+/* -------------
+   CONTACT US
+-------------- */
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -26,10 +36,14 @@
 }
 
 .heading {
-    font-size: 2.5em;
-    color: #fff;
-    margin-top: 2.5em;
-
+	padding-top: 110px;
+    font-size: 3em;
+    color: var(--white1);
+	text-align: center;
+	max-width: 700px;
+	margin: auto auto 20px; 
+    margin-top: -100px;
+	margin-bottom: 10px;
 }
 
 .sub-heading {
@@ -42,23 +56,25 @@
 .contactForm {
     display: grid;
     gap: 3em;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .cForm {
     width: 100%;
-    margin-top: 3em;
 }
 
 .sentence1 {
-    color: var(--paraColor);
+	text-align: center;
+    color: var(--paracolor);
     font-size: 1.1rem;
     line-height: 1.5em;
     margin-bottom: 1em;
+	max-width: 700px;
+	margin: auto auto 20px;
 }
 
 .sentence2 {
-    color: var(--paraColor);
+    color: var(--paracolor);
     font-size: 14px;
     line-height: 1.5em;
     margin-bottom: 1em;
@@ -75,8 +91,8 @@
     font-size: .9rem;
     padding: 1em;
     outline: none;
-    background-color: var(--formBg);    
-    color: var(--paraColor);
+    background-color: var(--black2);    
+    color: var(--white1);
     border-radius: 10px;
     border: 1px solid rgb(53, 53, 53);
     margin-bottom: 1em;
@@ -84,7 +100,7 @@
 
 .input:focus {
     border: 1px solid var(--mgwrpcMain1);
-    color: var(--mgwrpcMain1)
+    color: var(--white1)
 }
 
 .input:not(:placeholder-shown) {
@@ -107,17 +123,15 @@
     font-size: .9rem;
     padding: 1em;
     outline: none;
-    background-color: var(--formBg);    
-    color: var(--paraColor);
     border-radius: 10px;
     border: 1px solid rgb(53, 53, 53);
     margin-bottom: 1em;
 }
 
 .submitbtn {
-    background-color: var(--primaryColor);
+    background-color: var(--black3);
     border: none;
-    color: var(--textColor);
+    color: var(--white1);
     font-weight: bold;
     cursor: pointer;
     width: 100%;
@@ -125,7 +139,7 @@
 }
 
 .submitbtn:hover {
-    color: black;
+    background-color: var(--black2);
 }
 
 .map-container {
@@ -134,22 +148,12 @@
     height: 500px;
 }
 
-.mapBg {
-    position: absolute;
-    background-color: var(--bodyBg);
-    top: 0;
-    right: 0;
-    width: 450px;
-    height: 90%;
-    border-radius: 20px;
-}
-
 .map {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 450px;
-    height: 90%;
+    width: 100%;
+    height: 100%;
 }
 
 .map iframe {
@@ -161,8 +165,8 @@
 .contactMethod {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
-    padding-bottom: 100px;
+    margin-top: 5%;
+    margin-bottom: 55px;
     text-align: left;
 }
 
@@ -173,30 +177,18 @@
 
 .contactIcon {
     font-size: 30px;
-    color: var(--primaryColor);
+    color: var(--white1);
     width: 70px;
 }
 
-@media screen and (max-width:1060px) {
-    .mapBg {
-        position: relative;
-
-        width: 450px;
-        height: 90%;
-        border-radius: 20px;
-    }
-}
-
-@media screen and (max-width:985px) {
+/* -------------
+   BREAKPOINTS
+-------------- */
+@media screen and (max-width:1000px) {
     .sentence2 {
         font-size: 12px;
     }
 
-    .map-container {
-        position: relative;
-        width: 100%;
-        height: 500px;
-    }
 }
 
 @media screen and (max-width:1000px) {
