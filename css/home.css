@@ -73,7 +73,7 @@
     transform: translateY(-50%);
 }
 
-.slider .buttons button {
+.slider .buttons button{
     width: 50px;
     height: 50px;
     background-color: #fff5;
@@ -83,7 +83,7 @@
     font-weight: bold;
 }
 
-.slider .dots {
+.slider .dots{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -95,7 +95,7 @@
     justify-content: center;
 }
 
-.slider .dots li {
+.slider .dots li{
     list-style: none;
     width: 10px;
     height: 10px;
@@ -105,7 +105,7 @@
     transition: 0.5s;
 }
 
-.slider .dots li.active {
+.slider .dots li.active{
     width: 30px;
 }
 
@@ -141,55 +141,55 @@
    BREAKPOINTS
 ------------- */ 
 @media screen and (max-width: 1750px) {
-    .slider {
+    .slider{
         height: 820px;
     }
 }
 
 @media screen and (max-width: 1600px) {
-    .slider {
+    .slider{
         height: 800px;
     }
 }
 
 @media screen and (max-width: 1500px) {
-    .slider {
+    .slider{
         height: 760px;
     }
 }
 
 @media screen and (max-width: 1400px) {
-    .slider {
+    .slider{
         height: 710px;
     }
 }
 
 @media screen and (max-width: 1300px) {
-    .slider {
+    .slider{
         height: 660px;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    .slider {
+    .slider{
         height: 610px;
     }
 }
 
 @media screen and (max-width: 1100px) {
-    .slider {
+    .slider{
         height: 560px;
     }
 }
 
 @media screen and (max-width: 1000px) {
-    .slider {
+    .slider{
         height: 510px;
     }
 }
 
 @media screen and (max-width: 900px) {
-    .slider {
+    .slider{
         height: 400px;
     }
 
@@ -211,7 +211,7 @@
     background: var(--black1);
 }
 
-.text-center h2 {
+.text-center h2{
 	padding-top: 50px;
     font-size: 3em;
     color: var(--white1);
@@ -352,7 +352,7 @@
 	    margin-right: 10px;
 	}
 	
-	.row img {
+	.row img{
 		width: 50%;
 		margin-top: -30px;
 	}
@@ -372,7 +372,7 @@
 }
 
 @media screen and (max-width: 900px) {
-    .text-center h2 {
+    .text-center h2{
         font-size: 2.5em;
     }
 
@@ -389,7 +389,7 @@
         margin: 0 15px 0 15px;
     }
 
-	.row img {
+	.row img{
 		width: 60%;
 		margin-top: -30px;
 	}
