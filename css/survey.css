@@ -53,7 +53,7 @@ body {
     margin-top: 100px;
 }
 
-#head, #subheading, #content, form {
+#subheading, #content, form {
     color: var(--white1);
 }
 
@@ -251,11 +251,15 @@ input[type="radio"].radio-btn:checked {
     color: var(--mgwrpcMain1); 
 }
 
-.radio-btn:checked + .radio-text {
+.radio-btn:checked {
     color: var(--mgwrpcMain1); 
+    transform: scale(1.5);
 }
 
-/* Change Autocomplete styles in Chrome*/
+.radio-btn:checked:hover {
+    transform: scale(1.5);
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus,
@@ -265,9 +269,9 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-  -webkit-text-fill-color: var(--mgwrpcMain1); 
-  font-size: 1.1em;
-  transition: background-color 5000s ease-in-out 0s; 
+    -webkit-text-fill-color: var(--mgwrpcMain1); 
+    font-size: 1.1em;
+    transition: background-color 5000s ease-in-out 0s; 
 }
 
 
