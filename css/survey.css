@@ -218,7 +218,7 @@ input[type="radio"] {
 }
 
 input[type="radio"]:hover {
-    transform: scale(1.2);
+    transform: scale(1.3);
 }
 
 input[type="radio"].radio-btn {
@@ -227,7 +227,7 @@ input[type="radio"].radio-btn {
 
 input[type="radio"].radio-btn:checked {
     accent-color: var(--mgwrpcMain1);
-    transition: 1s;
+    transition: 0.8s;
 }
 
 .radio-container {
@@ -238,7 +238,8 @@ input[type="radio"].radio-btn:checked {
   
 .radio-btn {
     margin-right: 20px;
-    accent-color: #fff; 
+    accent-color: var(--black1); 
+    transition: 1s;
 }
   
 .radio-text {
@@ -251,13 +252,8 @@ input[type="radio"].radio-btn:checked {
     color: var(--mgwrpcMain1); 
 }
 
-.radio-btn:checked {
+.radio-btn:checked + .radio-text {
     color: var(--mgwrpcMain1); 
-    transform: scale(1.5);
-}
-
-.radio-btn:checked:hover {
-    transform: scale(1.5);
 }
 
 input:-webkit-autofill,
